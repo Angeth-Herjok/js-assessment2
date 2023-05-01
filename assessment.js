@@ -17,7 +17,7 @@ isAvailable: false },
 function getAvailableBooks(){
     let empty=[]
     for(let book of books){
-        if(books===tittle){
+        if(books.tittle){
             empty.push(books.tittle)
         }
     }
@@ -29,7 +29,7 @@ console.log(getAvailableBooks());
 function getBooksByAuthor(Homer){
     let emptyArray=[]
     for(let authorbook of books){
-        if(books.title===author){
+        if(books.author){
             emptyArray.push(author.books)
         }
     }
@@ -57,7 +57,7 @@ console.log(addNewBook(newBook));
 // the book's isAvailable property to false. If the book is not found in the library, the
 // function should return a message indicating that the book is not available.
 function checkoutBook(title){
-    books.forEach(item)
+    // books.forEach(item)
     if(books.title !=isAvailable){
         console.log("the book is not available");
     }
@@ -70,7 +70,7 @@ console.log(checkoutBook())
 // book's isAvailable property to true. If the book is not found in the library, the function
 // should return a message indicating that the book does not belong to the library.
 function returnBook(title){
-    books.forEach(item)
+    // books.forEach(books)
     if(books.title !=isAvailable){
         console.log("the book does not belong to the library");
     }
